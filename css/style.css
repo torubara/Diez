@@ -577,7 +577,7 @@ p.course-card__description{
   /*ширину  стоит убрать после того
   как всю разметку для десктопа перенесу в низ файл*/
   .advantages__right-block .advantages-card{
-    width: 270px;
+    width: 260px;
     height: 565px;
     margin-top: 42px;
     margin-bottom: 0;
@@ -736,4 +736,156 @@ p.course-card__description{
   text-transform: uppercase;
   color: #000;
   margin-left: 45px;
+}
+
+
+/*FORM style*/
+
+.form__wrapper {
+  display: none;
+}
+
+@media (min-width: 321px) {
+  .form__wrapper {
+    display: block;
+    position: relative;
+  }
+}
+
+form{
+  width: 260px;
+
+  background-color: rgba(250,251,251,0.85);
+  border: 2px solid #eec643;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*height: 470px;*/
+  /*width: 220px;*/
+  /*margin: auto;*/
+}
+fieldset{
+  width: 260px;
+  /*height: 420px;*/
+  position: relative;
+  border: none;
+  /*border: 2px solid #021a23;*/
+  padding: 20px;
+  margin: 0 auto;
+  /*background-color: rgba(250,251,251,0.85);*/
+}
+legend{
+  display: inline-block;
+  position: absolute;
+  /*width: 200px;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 30px;
+  color: #eec643;
+}
+
+.form__text{
+  margin: 45px 0 150px;
+  color: rgba(2, 25, 36, 0.85);
+  line-height: 28px;
+  font-size: 20px;
+}
+
+input{
+  font-size: 20px;
+  height: 25px;
+  width: 200px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-bottom: 2px solid #eec643;
+  border-left-style:none;
+  border-right-style:none;
+  border-top-style:none;
+}
+
+.form-button{
+  /*width: 90px;*/
+  font-family: "PT Sans";
+  width: 100%;
+  height: 70px;
+  background-color: #eec643;
+  text-transform: uppercase;
+  margin-top: 30px;
+  color: #fff;
+  border: none;
+}
+
+/*input {
+
+}
+input:nth-of-type(2) {
+  background-color: transparent;
+  border-bottom: 2px solid #eec643;
+  border-left-style:none;
+  border-right-style:none;
+  border-top-style:none;
+}*/
+
+.select__wrapper{
+  position: relative;
+
+}
+
+.select__wrapper select{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 202px;
+  height: 25px;
+  border-radius: 1px;
+  border: none;
+  border-bottom: 3px solid #eec643;
+  background-color: transparent;
+
+  appearance: none;            /* remove arrow        */
+  -webkit-appearance: none;    /* remove arrow Chrome */
+  -moz-appearance: none;
+}
+
+.select__icon{
+  position: absolute;
+  bottom: 5px;
+  left: 180px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/icon/Triangle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.promo__form form {
+  border: 1px solid #021a23;
+}
+
+.promo__form legend {
+  color: #021a23;
+}
+
+.promo__form .form__text{
+  margin-bottom: 50px;
+}
+
+.promo__form .form-button {
+  background-color: #021a23;
+}
+
+.promo__form input {
+  border-color: #021a23;
+}
+
+.promo__form .select__wrapper select{
+  border-color: #021a23;
+}
+
+.promo__form .select__icon{
+  background-image: url(../img/icon/Triangle-dark.png);
 }
