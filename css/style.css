@@ -29,6 +29,7 @@
 body {
   font-family: "PT Sans";
   font-weight: normal;
+  background-color: #f9fcfc;
   color: #021a23;
 }
 
@@ -520,6 +521,12 @@ p.course-card__description{
 }
 
 @media (min-width: 321px){
+  .advantages__right-block{
+    padding-top: 42px;
+  }
+}
+
+@media (min-width: 321px){
   .advantages .second-title{
     display: block;
     width: 560px;
@@ -536,12 +543,14 @@ p.course-card__description{
   height: 145px;
   -webkit-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 15px;
 }
 
 @media (min-width: 321px){
   .advantages-card{
     width: 270px;
+    background-position: -150px;
 
   }
 }
@@ -555,6 +564,7 @@ p.course-card__description{
 
 .advantages__left-block .advantages-card:nth-of-type(1) {
   background-image: url(../img/advantages_card_img_1.jpg);
+  /*background-position: -100px;*/
 }
 
 .advantages__left-block .advantages-card:nth-of-type(2) {
@@ -570,16 +580,19 @@ p.course-card__description{
   .advantages__left-block .advantages-card{
     height: 465px;
   }
+}
 
+@media (min-width: 321px){
+  .advantages__left-block .advantages-card:nth-of-type(1){
+    background-position: -100px;
+  }
 }
 
 @media (min-width: 321px) {
-  /*ширину  стоит убрать после того
-  как всю разметку для десктопа перенесу в низ файл*/
+
   .advantages__right-block .advantages-card{
     width: 260px;
     height: 565px;
-    margin-top: 42px;
     margin-bottom: 0;
   }
 }
@@ -652,6 +665,13 @@ p.course-card__description{
   }
 }
 
+@media (min-width: 321px) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: 321px){
   .contacts .second-title{
     width: 560px;
@@ -672,6 +692,12 @@ p.course-card__description{
     display: flex;
     flex-wrap: wrap;
     width: 870px;
+  }
+}
+
+@media (min-width: 321px){
+  .contacts__right-block{
+    padding-top: 45px;
   }
 }
 
@@ -790,7 +816,7 @@ legend{
 }
 
 .form__text{
-  margin: 45px 0 150px;
+  margin: 45px 0 205px;
   color: rgba(2, 25, 36, 0.85);
   line-height: 28px;
   font-size: 20px;
@@ -843,7 +869,7 @@ input:nth-of-type(2) {
   height: 25px;
   border-radius: 1px;
   border: none;
-  border-bottom: 3px solid #eec643;
+  border-bottom: 2px solid #eec643;
   background-color: transparent;
 
   appearance: none;            /* remove arrow        */
