@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diez - школа музыкального искусства</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <div class="container">
       <div class="header__inner">
-        <div class="logo"><a href="index.html" class="logo__link"><img src="/img/Diez-logo.png" alt="Диез-логотип"></a></div>
-        <a href="#" class="burger__button-link">
+        <div class="logo"><a href="index.html" class="logo__link"><img src="img/Diez-logo.png" alt="Диез-логотип"></a></div>
+        <a href="#" id="burger-button" class="burger__button-link">
           <div  class="burger__button">  <!-- <img src="img/icon/burger.png" alt=""> -->
           </div>
         </a>
@@ -151,6 +153,18 @@
 
       <section class="video" id="video">
         <h2 class="second-title">В стенах школы</h2>
+        <div class="carousel-wrapper">
+          <!-- Дурацкий костыль, надо переделать позже, когда разберусь с JQuery -->
+          <div class="owl-carousel">
+            <div class="item"><a class="video-link" href="https://www.youtube.com/?gl=RU&hl=ru"><img class="play_button_icon" src="img/icon/play_button.png " alt=""><img src="img/video_card_img_1.jpg" alt=""><span>Зимняя вишня</span><p>Финальный концерт 2018 года</p></a></div>
+
+            <div class="item"><a class="video-link" href="https://www.youtube.com/?gl=RU&hl=ru"><img class="play_button_icon" src="img/icon/play_button.png " alt=""><img src="img/video_card_img_2.jpg" alt=""><span class="second_video_span">Янг Чжо</span><p>Репетиция сольной партии скрипки</p></a></div>
+
+            <div class="item"><a class="video-link" href="https://www.youtube.com/?gl=RU&hl=ru"><img class="play_button_icon" src="img/icon/play_button.png " alt=""><img src="img/video_card_img_3.jpg" alt=""><span>Летний штиль</span><p>За кулисами концерта</p></a></div>
+
+            <div class="item"><a class="video-link" href="https://www.youtube.com/?gl=RU&hl=ru"><img class="play_button_icon" src="img/icon/play_button.png " alt=""><img src="img/video_card_img_4.jpg" alt=""><span>Сергей Трофимов</span><p>ЛЮБЭ - Выйду в поле с конем</p></a></div>
+          </div>
+        </div>
         <!-- Блок с видео-каруселькой-->
       </section>
       <section class="contacts" id="contacts">
@@ -222,5 +236,8 @@
       </div>
     </div>
   </footer>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

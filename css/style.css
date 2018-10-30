@@ -683,9 +683,13 @@ p.course-card__description{
   }
 }
 
+.contacts__address{
+  margin: 0;
+}
 
 .contacts__phone{
   color: #021a23;
+  line-height: 30px;
 }
 @media (min-width: 321px){
   .contacts__left-block{
@@ -701,6 +705,9 @@ p.course-card__description{
   }
 }
 
+.contacts__inner{
+  margin-left: 10px;
+}
 
 @media (min-width: 321px){
   .contacts__inner{
@@ -914,4 +921,84 @@ input:nth-of-type(2) {
 
 .promo__form .select__icon{
   background-image: url(../img/icon/Triangle-dark.png);
+}
+
+
+/*Video блок*/
+
+.video {
+  /*display: flex;*/
+}
+
+.video .item {
+  background-size: cover;
+}
+
+@media (min-width: 321px){
+   .carousel-wrapper {
+    display: none;
+  }
+}
+
+.owl-carousel{
+  width: 85%;
+  margin: auto;
+  position: relative;
+}
+
+.owl-nav {
+  position: relative;
+}
+
+
+
+.owl-carousel .owl-nav button.owl-prev{
+  background-image:url(../img/icon/sprite/sprites.png);
+  background-position: -9px -112px ;
+  width: 10px;
+  height: 18px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -90px;
+  left: -20px;
+}
+.owl-carousel .owl-nav button.owl-next{
+  background-image: url(../img/icon/sprite/sprites.png);
+  background-position: -9px -63px ;
+  width: 10px;
+  height: 18px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -90px;
+  right: -20px;
+}
+
+.video-link span{
+  color: #fff;
+  position: absolute;
+  bottom: 35px;
+  left: 10px;
+  font-weight: bold;
+}
+.video-link p {
+  margin: 0;
+  color: #fff;
+  position: absolute;
+  bottom: 10%;
+  left: 10px;
+}
+
+ span.second_video_span{
+  bottom: 55px;
+}
+
+img.play_button_icon{
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 28px;
+  height: 35px;
 }
