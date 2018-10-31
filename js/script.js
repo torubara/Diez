@@ -1,4 +1,20 @@
-  $(document).ready(function(){
+$(document).ready(function() {
+  if ( $(window).width() < 1169 ) {
+    startCarousel();
+  }
+  else {}
+});
+
+$(window).resize(function() {
+    if ( $(window).width() < 1169 ) {
+      startCarousel();
+    }
+    else {
+      stopCarousel();
+    }
+});
+
+function startCarousel(){
     $('.owl-carousel').owlCarousel({
         items:4,
         merge:true,
@@ -18,6 +34,11 @@
             }
         }
     });
-    $('.play_button_icon').width(28)
-})
 
+    $('.play_button_icon').width(28)
+}
+
+function stopCarousel() {
+  var owl = $('.owl-carousel');
+  owl.trigger('destroy.owl.carousel');
+}
