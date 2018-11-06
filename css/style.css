@@ -79,7 +79,9 @@ h3 {
 
 
 header{
-  background-image: url(../img/bg_main_mobile.jpg);
+  background-image: url(../img/bg_main.jpg);
+  background-position: center;
+  background-size: cover;
   height: 535px;
   width: auto;
   background-repeat: no-repeat;
@@ -89,8 +91,8 @@ header{
 
 @media (min-width: 1169px) {
   header {
-    background-image: url(../img/bg_main.jpg);
-    background-size: 100%;
+    background-position: 0 0;
+    background-size: cover;
     height: 765px;
   }
 }
