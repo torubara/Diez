@@ -65,7 +65,7 @@ h1 {
   border-bottom: 1px solid #eec643;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .second-title{
     max-width: 560px;
   }
@@ -87,9 +87,9 @@ header{
 }
 
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   header {
-    background-image: url(../img/bg_main.jpg);
+background-image: url(../img/bg_main.jpg);
     background-size: 100%;
     height: 765px;
   }
@@ -100,7 +100,7 @@ header a {
 
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
    header a {
     color: #000;
   }
@@ -111,14 +111,13 @@ header a {
   margin: 0 auto;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .container{
-  max-width: 1150px;
   margin:auto;
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .header__inner{
     display: flex;
     flex-wrap: wrap;
@@ -138,7 +137,7 @@ header a {
   background-position: 0px 0px;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .main-menu{
     display: block;
     flex-direction:row;
@@ -154,7 +153,7 @@ header a {
 }
 
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .main-menu__list{
   display: flex;
   flex-direction:row;
@@ -162,7 +161,7 @@ header a {
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .main-menu__item{
     padding-left: 30px;
   }
@@ -187,7 +186,7 @@ pos
   padding: 20px 0 25px 0;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .logo {
     padding-top: 30px;
   }
@@ -205,7 +204,7 @@ pos
   right: 5%;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .burger__button {
     display: none;
   }
@@ -215,14 +214,14 @@ pos
   display: none;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .promo{
     display:block;
     margin-top: 150px;
   }
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .promo-mobile{
     display: none;
 
@@ -265,7 +264,7 @@ h1.promo__title{
   margin-bottom: 30px;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .contacs__button-link{
     display: none;
   }
@@ -276,7 +275,7 @@ h1.promo__title{
   display: block;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .burger__button-link{
     display: none;
   }
@@ -286,7 +285,7 @@ section {
   margin-top: 5px;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   section{
     margin-top: 45px;
   }
@@ -299,7 +298,7 @@ section {
   justify-content: space-between;*/
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .courses{
     display: flex;
     flex-wrap:wrap;
@@ -307,7 +306,7 @@ section {
   }
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .courses .second-title {
     height: 560px;
     font-size: 50px;
@@ -333,7 +332,7 @@ section {
 
 
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .courses__list{
     /*width: 100%;*/
     display: flex;
@@ -370,21 +369,21 @@ section {
   background-image: url(../img/course_card_img_4.jpg);
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .course-card{
     height: 270px;
 
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .course-card:nth-of-type(1){
     max-width: 550px;
     order: 2;
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .course-card:nth-of-type(2){
     max-width: 480px;
     order: 1;
@@ -393,14 +392,14 @@ section {
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .course-card:nth-of-type(3){
     max-width: 480px;
     order: 3;
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .course-card:nth-of-type(4){
     display: block;
     max-width: 260px;
@@ -418,13 +417,13 @@ section {
   padding:30px 0px 0px 10px;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
  .course-card__inner{
     padding: 25px 0 0 30px;
  }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .course-card__title{
     font-size: 30px;
     line-height: 40px;
@@ -435,7 +434,7 @@ p.course-card__description{
   margin: 0;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   p.course-card__description{
     font-size: 20px;
     margin-top: 15px;
@@ -460,7 +459,7 @@ p.course-card__description{
   transform:rotate(-90deg);
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .all-courses__button {
     display: block;
     width: 260px;
@@ -468,7 +467,7 @@ p.course-card__description{
     order: 5;
   }
 }
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .all-courses__link{
     transform: none;
     top: 20px;
@@ -488,7 +487,7 @@ p.course-card__description{
   justify-content: space-between;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .advantages{
     flex-wrap: nowrap;
   }
@@ -504,7 +503,7 @@ p.course-card__description{
   /*width: 100%;*/
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .advantages__left-block{
     width: 50%;
     margin-left: 7px;
@@ -520,13 +519,13 @@ p.course-card__description{
   width: 100%;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .advantages__right-block{
     padding-top: 42px;
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .advantages .second-title{
     display: block;
     width: 560px;
@@ -547,7 +546,7 @@ p.course-card__description{
   margin-bottom: 15px;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .advantages-card{
     width: 270px;
     background-position: -150px;
@@ -576,19 +575,19 @@ p.course-card__description{
   width: 75%;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .advantages__left-block .advantages-card{
     height: 465px;
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .advantages__left-block .advantages-card:nth-of-type(1){
     background-position: -100px;
   }
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
 
   .advantages__right-block .advantages-card{
     width: 260px;
@@ -597,13 +596,13 @@ p.course-card__description{
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .advantages-card__inner{
     padding: 15px 0 0 30px;
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .advantages-card__title{
     font-size: 30px;
     line-height: 40px;
@@ -615,7 +614,7 @@ p.course-card__description{
   line-height: 22px;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .advantages-card__text {
     font-size: 20px;
     line-height: 28px;
@@ -641,13 +640,13 @@ p.course-card__description{
   transform:rotate(-90deg);
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .advantages__button{
     display: none;
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .video .second-title{
     height: 560px;
     font-size: 50px;
@@ -665,14 +664,14 @@ p.course-card__description{
   }
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .contacts {
     display: flex;
     justify-content: space-between;
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .contacts .second-title{
     width: 560px;
     font-size: 50px;
@@ -691,7 +690,7 @@ p.course-card__description{
   color: #021a23;
   line-height: 30px;
 }
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .contacts__left-block{
     display: flex;
     flex-wrap: wrap;
@@ -699,7 +698,7 @@ p.course-card__description{
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .contacts__right-block{
     padding-top: 45px;
   }
@@ -709,7 +708,7 @@ p.course-card__description{
   margin-left: 10px;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .contacts__inner{
     margin-top: 20px;
     align-self: center;
@@ -721,7 +720,7 @@ p.course-card__description{
   margin: 15px 0 15px 0;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .map{
     display: none;
   }
@@ -731,7 +730,7 @@ p.course-card__description{
   display: none;
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .map-desktop{
     display: block;
     width: 870px;
@@ -739,7 +738,7 @@ p.course-card__description{
   }
 }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .social-navigation__list{
     display:flex;
     flex-direction: row;
@@ -750,7 +749,7 @@ p.course-card__description{
   display: none;
  }
 
-@media (min-width: 321px){
+@media (min-width: 1169px){
   .footer__inner{
     display: flex;
     align-items: baseline;
@@ -774,7 +773,7 @@ p.course-card__description{
   display: none;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1169px) {
   .form__wrapper {
     display: block;
     position: relative;
