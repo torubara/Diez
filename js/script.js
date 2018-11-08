@@ -29,9 +29,9 @@ function startCarousel(){
             0:{
                 items:1
             },
-            600:{
-                items:4
-            }
+            // 600:{
+            //     items:4
+            // }
         }
     });
 
@@ -42,3 +42,10 @@ function stopCarousel() {
   var owl = $('.owl-carousel');
   owl.trigger('destroy.owl.carousel');
 }
+
+$('#burger-button').click(function(event){
+  event.preventDefault();
+  $(this).toggleClass('burger__button-close');
+  $('#main-menu, #nav-wrapper').toggleClass('visible')
+
+})
