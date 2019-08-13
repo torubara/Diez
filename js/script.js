@@ -1,51 +1,41 @@
-$(document).ready(function() {
-  if ( $(window).width() < 1169 ) {
-    startCarousel();
-  }
-  else {}
-});
+$(document).ready(function () {
 
-$(window).resize(function() {
-    if ( $(window).width() < 1169 ) {
-      startCarousel();
+    if ($(window).width() < 1169) {
+        startCarousel();
     }
-    else {
-      stopCarousel();
-    }
-});
 
-function startCarousel(){
-    $('.owl-carousel').owlCarousel({
-        items:4,
-        merge:true,
-        loop:true,
-        margin:10,
-        video:true,
-        lazyLoad:true,
-        center:true,
-        nav:true,
-        navText : ["",""],
-        responsive:{
-            0:{
-                items:1
-            },
-            // 600:{
-            //     items:4
-            // }
+    $(window).resize(function () {
+        if ($(window).width() < 1169) {
+            startCarousel();
+        } else {
+            stopCarousel();
         }
     });
 
-    $('.play_button_icon').width(28)
-}
+    function startCarousel() {
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            margin: 2,
+            loop: true,
+            video: true,
+            lazyLoad: true,
+            center: true,
+            dots: false,
+            nav: true,
+            navText: [],
+        });
 
-function stopCarousel() {
-  var owl = $('.owl-carousel');
-  owl.trigger('destroy.owl.carousel');
-}
+        $('.play_button_icon').width(28); // ширину элемента переопределять через js? ну такое..
+    }
 
-$('#burger-button').click(function(event){
-  event.preventDefault();
-  $(this).toggleClass('burger__button-close');
-  $('#main-menu, #nav-wrapper').toggleClass('visible')
+    function stopCarousel() {
+        var owl = $('.owl-carousel');
+        owl.trigger('destroy.owl.carousel');
+    }
 
-})
+    $('#burger-button').click(function (evt) { // если это просто кнопка - зачем делать ее ссылкой?
+        evt.preventDefault();
+        $(this).toggleClass('burger__button-close');
+        $('#main-menu, #nav-wrapper').toggleClass('visible');
+    });
+});

@@ -37,6 +37,11 @@ a {
   text-decoration: none;
 }
 
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -978,39 +983,50 @@ input:nth-of-type(2) {
   background-size: cover;
 }
 
-
-
 .owl-carousel{
-  width: 85%;
+  padding: 0 7.5%;
   margin: auto;
   position: relative;
 }
 
-.owl-nav {
-  position: relative;
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  width: calc(7.5% + 16px);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  outline: none;
 }
 
-
-
-.owl-carousel .owl-nav button.owl-prev{
-  background-image:url(../img/icon/sprite/sprites.png);
-  background-position: -9px -112px ;
+.owl-carousel .owl-nav button.owl-prev:before,
+.owl-carousel .owl-nav button.owl-next:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 10px;
   height: 18px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -90px;
-  left: -20px;
-}
-.owl-carousel .owl-nav button.owl-next{
+  margin: auto;
   background-image: url(../img/icon/sprite/sprites.png);
-  background-position: -9px -63px ;
-  width: 10px;
-  height: 18px;
   background-repeat: no-repeat;
-  position: absolute;
-  top: -90px;
-  right: -20px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: -16px;
+}
+.owl-carousel .owl-nav button.owl-next {
+  right: -16px;
+}
+
+.owl-carousel .owl-nav button.owl-prev:before {
+  background-position: -9px -112px;
+}
+.owl-carousel .owl-nav button.owl-next:before {
+  background-position: -9px -63px;
 }
 
 .video-link span{
